@@ -22,8 +22,13 @@ conta1.depositar(5439.90);
 
 conta2.numero = 212103;
 conta2.agencia = 1234;
-conta2.cliente = cliente2;
+//conta2.cliente = new Cliente();
+conta2.cliente = cliente2
 conta2.depositar(3389.90);
+
+//conta2.cliente.id = 2;
+//conta2.cliente.nome = "Tati";
+//conta2.cliente.cpf = 3213213210;
 
 console.log('Estado Inicial')
 console.log(cliente1);

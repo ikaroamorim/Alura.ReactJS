@@ -1,11 +1,29 @@
+import {Cliente} from "./Cliente.js"
+
 export class ContaCorrente {
     numero;
     agencia;
-    cliente;
+    _cliente;
+
+    set cliente(c){
+        if( c instanceof Cliente){
+            this._cliente = c;
+        }
+    }
+
+    get cliente(){
+        this._cliente;
+    }
 
     //campos privados não foram estabelecidos na linguagem ainda
     //#saldo = 0;
     _saldo = 0
+
+    get saldo(){
+        return this._saldo;
+    }
+
+
 
     sacar(valor) {
         if(valor<=0 || this._saldo <= valor) return false;
