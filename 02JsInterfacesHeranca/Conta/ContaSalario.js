@@ -1,6 +1,6 @@
 import { Conta } from "./Conta.js";
 
-export class ContaPoupanca extends Conta {
+export class ContaSalario extends Conta {
     constructor(cliente) {
         super(0, cliente, 100)
     }
