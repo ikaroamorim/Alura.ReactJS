@@ -7,7 +7,7 @@ const cadastrarClientes = (nome, cpf) => {
     nome: nome,
     cpf: cpf
   });
-  return fetch('http://localhost:4000/clientes/cliente',{
+  return fetch('http://localhost:4000/clientes/cliente', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
@@ -15,6 +15,10 @@ const cadastrarClientes = (nome, cpf) => {
     body: json,
   }).then((resp) => resp.body);
 };
+
+const deletaCliente = (id) => fetch(`http://localhost:4000/clientes/cliente/${id}`, {
+  method: 'DELETE',
+});
 
 /* Starting Server
 
