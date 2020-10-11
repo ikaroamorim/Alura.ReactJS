@@ -1,0 +1,25 @@
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea{
+  width: 30vmax;
+  padding: 5vmin;
+  margin: 10px 0;
+  background-color: lightcyan;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+textarea{
+  resize: vertical;
+}
+
+input[type="submit"]{
+  background-color: #61dafb;
+}
+
+input[type="submit"]:hover{
+  background-color: #4dd2f7; 
+}

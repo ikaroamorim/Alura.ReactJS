@@ -1,0 +1,19 @@
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+li{
+  background-color: lightcyan;
+  list-style: none;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+li p{
+  color: gray;
+}
