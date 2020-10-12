@@ -6,9 +6,23 @@ import NoteList from './components/noteList/'
 import FormItems from './components/formItems/';
 
 class App extends Component{
-  render(){
-
+  constructor(){
+    super()
+    this.state = {
+      notes:[]
+    }
+  }
   
+  createNote(title, text){
+    const newNote = {title, text};
+    const newNoteArray = [...this.state.notes, newNote]
+    const newState = {
+      notes: newNoteArray
+    }
+    this.setState(newState)
+   }
+
+  render(){
   return (
     <div className="App">
   <header className="App-header">
@@ -16,8 +30,8 @@ class App extends Component{
     <h1>CEEP </h1>
   </header>
   <section className="main">
-    <FormItems/>
-    <NoteList/>
+    <FormItems createNote={this.createNote.bind(this)}/>
+    <NoteList notes={this.state.notes}/>
   </section>
 </div>
   )}

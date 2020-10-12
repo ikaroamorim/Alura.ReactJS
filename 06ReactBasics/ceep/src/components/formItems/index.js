@@ -1,3 +1,3 @@
-import FormItems from 'formItems.jsx'
+import FormItems from './formItems.jsx'
 
 export default FormItems

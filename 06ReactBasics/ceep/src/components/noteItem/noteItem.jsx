@@ -6,10 +6,10 @@ export default class NoteItem extends Component {
     return (
       <div className="note-body">
         <div className="note-title">
-          <h3>Título</h3>
+          <h3>{this.props.title}</h3>
         </div>
         <div className="note-content">
-          <p>Escreva sua Nota</p>
+          <p>{this.props.text}</p>
         </div>
       </div>
     )
